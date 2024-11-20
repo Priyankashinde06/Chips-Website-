@@ -1,0 +1,35 @@
+{
+    "status": "success",
+    "items": [
+        {
+            "id": 1,
+            "title": "Crab",
+            "price": "$8",
+            "image": "/assests/img/product-chips-1.png"
+        },
+        {
+            "id": 2,
+            "title": "Cheese",
+            "price": "$5",
+            "image": "/assests/img/product-chips-2.png"
+        },
+        {
+            "id": 3,
+            "title": "BBQ",
+            "price": "$6",
+            "image":"/assests/img/product-chips-3.png"
+        },
+        {
+            "id": 4,
+            "title": "Hot",
+            "price": "$5",
+            "image":"/assests/img/product-chips-4.png"
+        },
+        {
+            "id": 5,
+            "title":"Mix" ,
+            "price": "$10",
+            "image":"/assests/img/product-chips-5.png"
+        }
+    ]
+}

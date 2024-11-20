@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="assests/css/swiper-bundle.min.css">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assests/css/styles.css">
+
+   <title>Responsive chips website</title>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav_logo">CHIPS</a>
+
+         <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+               <li>
+                  <a href="#home" class="nav_link active-link">Home</a>
+               </li>
+
+               <li>
+                  <a href="#favorites" class="nav_link">Favorites</a>
+               </li>
+
+               <li>
+                  <a href="#care" class="nav_link">Care</a>
+               </li>
+
+               <li>
+                  <a href="#products" class="nav_link">Products</a>
+               </li>
+
+               <li>
+                  <a href="#contact" class="nav_link">Contact</a>
+               </li>
+            </ul>
+
+            <button type="button" class="btn  position-relative mx-3 my-1 " id="cartBtn" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            <i class="ri-shopping-bag-3-line" style="font-size: 20px;"></i>
+            <span id="itemCounter" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              0
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+            <div class="nav_close" id="nav-close">
+               <i class="ri-close-large-line"></i>
+            </div>
+
+            <div class="nav_social">
+               <a href="" target="_blank" class="nav_social-link">
+                  <i class="ri-facebook-circle-line"></i>
+               </a>
+
+               <a href="" target="_blank" class="nav_social-link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+
+               <a href="" target="_blank" class="nav_social-link">
+                  <i class="ri-twitter-x-line"></i>
+               </a>
+            </div>
+         </div>
+
+         <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home_container container grid">
+            <div class="home_data">
+               <h1 class="home_title">SNACK <br> WITH NO <br> LIMITS</h1>
+
+               <p class="home_description">
+                  When you are hungry and don't have time
+                  to cook, snacks are the perfect solution,
+                  always prepare for midday hunger.
+               </p>
+
+               <img src="assests/img/meat.png" alt="image" class="home_meat">
+
+               <div class="home_buttons">
+                  <a href="#" class="button">Snack Now</a>
+                  <a href="#" class="button button_ghost">Buy Now</a>
+               </div>
+            </div>
+
+            <div class="home_images">
+               <div class="home_circle">
+                  <div class="home_subcircle"></div>
+               </div>
+
+               <img src="assests/img/home-chips.png" alt="image" class="home_img">
+
+               <img src="assests/img/chips-1.png" alt="image" class="home_chips-1">
+               <img src="assests/img/chips-2.png" alt="image" class="home_chips-2">
+               <img src="assests/img/chips-3.png" alt="image" class="home_chips-3">
+               <img src="assests/img/tomato-1.png" alt="image" class="home_tomato-1">
+               <img src="assests/img/tomato-2.png" alt="image" class="home_tomato-2">
+               <img src="assests/img/leaf-3.png" alt="image" class="home_leaf">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== FAVORITES ====================-->
+      <section class="favorite section" id="favorites">
+         <div class="favorites_container container grid">
+            <div class="favorites_data">
+               <h2 class="section_title">DISCOVER YOUR <br> FAVORITE FLAVORS</h2>
+
+               <p class="favorites_description">
+                  Try some exotic flavors or delicious
+                  toppings. We have collected some delicious
+                  snack recipes from around the world for you.
+               </p>
+
+               <img src="assests/img/cheese.png" alt="image" class="favorites_cheese-1">
+               <img src="assests/img/cheese.png" alt="image" class="favorites_cheese-2">
+            </div>
+
+            <div class="favorites_swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="favorites_article swiper-slide" data-fancybox="table-slider">
+                     <img src="assests/img/favorite-chips-1.png" alt="image" class="favorites_img">
+
+                     <img src="assests/img/leaf-1.png" alt="image" class="favorites_leaf-1">
+                     <img src="assests/img/leaf-2.png" alt="image" class="favorites_leaf-2">
+                  </article>
+
+                  <article class="favorites_article swiper-slide" data-fancybox="table-slider">
+                     <img src="assests/img/favorite-chips-2.png" alt="image" class="favorites_img">
+
+                     <img src="assests/img/leaf-1.png" alt="image" class="favorites_leaf-1">
+                     <img src="assests/img/leaf-2.png" alt="image" class="favorites_leaf-2">
+                  </article>
+
+                  <article class="favorites_article swiper-slide" data-fancybox="table-slider">
+                     <img src="assests/img/favorite-chips-3.png" alt="image" class="favorites_img">
+
+                     <img src="assests/img/leaf-1.png" alt="image" class="favorites_leaf-1">
+                     <img src="assests/img/leaf-2.png" alt="image" class="favorites_leaf-2">
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== CARE ====================-->
+      <section class="care section" id="care">
+         <h2 class="section_title">ENJOY AND TAKE <br> CARE OF YOUR HEALTH</h2>
+
+         <div class="care_container container grid">
+            <ul class="care_list">
+               <li class="care_item">
+                  <i class="ri-plant-line"></i>
+                  <p>
+                     The potatoes that are made into
+                     snacks are grown and harvested and
+                     are 100% organic.
+                  </p>
+               </li>
+
+               <li class="care_item">
+                  <i class="ri-fire-line"></i>
+                  <p>
+                     We fry the fries with vegetable and
+                     natural oil for good care.
+                  </p>
+               </li>
+
+               <li class="care_item">
+                  <i class="ri-heart-pulse-line"></i>
+                  <p>
+                     The potatoes are not processed, once
+                     cleaned they are cooked without
+                     preservatives.
+                  </p>
+               </li>
+
+               <li class="care_item">
+                  <i class="ri-hand-heart-line"></i>
+                  <p>
+                     They contain fewer calories and less
+                     fat for good health.
+                  </p>
+               </li>
+            </ul>
+
+            <img src="assests/img/care-chips.png" alt="" class="cre_img">
+         </div>
+      </section>
+
+      <!--==================== BANNER ====================-->
+      <section class="banner">
+         <div class="banner_container">
+            <ul class="banner_list">
+               <li class="banner_item">
+                  <i class="ri-leaf-line"></i>
+                  <span>GOOD FOR NATURE</span>
+               </li>
+
+               <li class="banner_item">
+                  <i class="ri-heart-pulse-line"></i>
+                  <span>LOW CALORIES</span>
+               </li>
+            </ul>
+         </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section id="products">
+         <div class="container" id="productDom">
+
+
+         </div>
+       
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="ri-close-line"></i></button>
+          <div>
+            <div class="text-center my-2">
+              <h3>Your Cart</h3>
+            </div>
+            <div id=" text-center">
+              <table class="table">
+                <tbody id="cart-contant">
+
+                </tbody>
+              </table>
+              <div class="text-center">
+                <h4>Total: <span id="total">0</span> Tk</h4>
+                <br>
+                <button class="btn btn-danger" id="clearCart">Clear Cart</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!-- <section class="products section" id="products">
+         <h2 class="section_title">BEST SELLING <br> PRODUCT</h2>
+
+         <div class="products_container container">
+            <div class="products_content grid">
+               <article class="products_card">
+                  <img src="assests/img/product-chips-1.png" alt="image" class="products_img">
+
+                  <span class="products_subtitle">Crab</span>
+                  <h2 class="products_title">Chips</h2>
+
+                  <span class="products_price">$8</span>
+
+                  <button class="products_button">
+                     <i class="ri-shopping-bag-3-line"></i>
+                  </button>
+               </article>
+
+               <article class="products_card">
+                  <img src="assests/img/product-chips-2.png" alt="image" class="products_img">
+
+                  <span class="products_subtitle">Cheese</span>
+                  <h2 class="products_title">Chips</h2>
+
+                  <span class="products_price">$5</span>
+
+                  <button class="products_button">
+                     <i class="ri-shopping-bag-3-line"></i>
+                  </button>
+               </article>
+
+               <article class="products_card">
+                  <img src="assests/img/product-chips-3.png" alt="image" class="products_img">
+
+                  <span class="products_subtitle">BBQ</span>
+                  <h2 class="products_title">Chips</h2>
+
+                  <span class="products_price">$6</span>
+
+                  <button class="products_button">
+                     <i class="ri-shopping-bag-3-line"></i>
+                  </button>
+               </article>
+
+               <article class="products_card">
+                  <img src="assests/img/product-chips-4.png" alt="image" class="products_img">
+
+                  <span class="products_subtitle">Hot</span>
+                  <h2 class="products_title">Chips</h2>
+
+                  <span class="products_price">$5</span>
+
+                  <button class="products_button">
+                     <i class="ri-shopping-bag-3-line"></i>
+                  </button>
+               </article>
+
+               <article class="products_card">
+                  <img src="assests/img/product-chips-5.png" alt="image" class="products_img">
+
+                  <span class="products_subtitle">Mix</span>
+                  <h2 class="products_title">Chips</h2>
+
+                  <span class="products_price">$10</span>
+
+                  <button class="products_button">
+                     <i class="ri-shopping-bag-3-line"></i>
+                  </button>
+               </article>
+            </div>
+
+            <img src="assests/img/crab.png" alt="image" class="products_crab">
+            <img src="assests/img/hamburger.png" alt="image" class="products_hamburger">
+            <img src="assests/img/cheese.png" alt="image" class="products_cheese">
+         </div>
+      </section> -->
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <div class="contact_container container">
+            <h2 class="section_title">CONTACT US TO <br> EAT CHIPS</h2>
+
+            <div class="contact_content grid">
+               <div class="contact_data grid">
+                  <div>
+                     <h3 class="contact_title">Write to us</h3>
+
+                     <div class="contact_social">
+                        <a href="https://api.whatsapp.com/send?phone=9890297282&text=Hello, more information!"
+                           target="_blank">
+                           <i class="ri-whatsapp-fill"></i>
+                        </a>
+
+                        <a href="https://m.me/bedimcode" target="_blank">
+                           <i class="ri-messenger-fill"></i>
+                        </a>
+
+                        <a href="mailto:ps662001@gmail.com" target="_blank">
+                           <i class="ri-mail-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+                  <div>
+                     <h3 class="contact_title">Call us</h3>
+
+                     <address class="contact_info">
+                        +00-987-7654-321 <br>
+                        +11-012345
+                     </address>
+                  </div>
+
+                  <div>
+                     <h3 class="contact_title">Find us here</h3>
+
+                     <address class="contact_info">
+                        Lima - Sun City - Peru <br>
+                        Av. Moon #4321
+                     </address>
+                  </div>
+               </div>
+               <img src="assests/img/contact-man.png" alt="image" class="contact_img">
+            </div>
+            <img src="assests/img/shrimp.png" alt="image" class="contact_shrimp">
+            <img src="assests/img/crab.png" alt="image" class="contact_crab">
+            <img src="assests/img/meat.png" alt="image" class="contact_meat">
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer_container grid">
+         <a href="#" class="footer_logo">CHIPS</a>
+
+         <div class="footer_content grid">
+            <a href="#" class="footer_link">Terms & Agreements</a>
+            <a href="#" class="footer_link">Privacy Policy</a>
+
+            <span class="footer_copy">
+               &#169; All Rights Reserved By Coders
+            </span>
+         </div>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assests/js/scrollreveal.min.js"></script>
+
+   <!--=============== SWIPER JS ===============-->
+   <script src="assests/js/swiper-bundle.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assests/js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+
+</html>
